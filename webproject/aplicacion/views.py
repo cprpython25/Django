@@ -7,3 +7,5 @@ def index(request):
 
 def viernes(request):
     return render(request, 'aplicacion/viernes.html')
+def paginapeliculas(request):
+    return render(request, "aplicacion/pelicula.html")
