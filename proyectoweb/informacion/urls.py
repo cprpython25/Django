@@ -4,4 +4,5 @@ from informacion import views
 urlpatterns=[
     path('', views.index, name= 'index')
     path('pelis/, ')
+    path('', views.index, name=)
 ]

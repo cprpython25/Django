@@ -6,7 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    {% include 'informacion/menu.html'}
+    {% include 'informacion/menu.html' %}
+    <h1>Jugadores</h1>
+    <!-- recorremos todos los numeros que recibimos -->
+    {% for valor in numeros %}
+
     
+
+    <table border="1">
+        <tr>
+            <th>DATO</th>
+            <th>VALOR</th>
+        </tr>
+            <td>Num</td>
+            <td>5</td>
+        </tr>
+        <!-- comentari -->
+        <tr>
+            <td>Num></td>
+            <td>7</td>
+        </tr>
+    </table>
 </body>
 </html>
