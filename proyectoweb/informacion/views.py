@@ -39,3 +39,21 @@ def saludo(request):
         nombreRecibido = request.POST['cajanombre']
         context = {}
 
+
+def collatz(request):
+    if ('cajanumero' in request.POST):
+    dato = request.POST['cajanumero']
+    numero = int(dato)
+    listanumeros =[]
+    while (numero != 1)
+        if (numero % 2 == 0):
+            numero = numero / 2
+        else:
+            numero = int(numero * 3 + 1)
+        listanumeros.append(numero)
+    context = {
+        ="numeroscollatz": listanumeros
+    }
+    return render(request, 'informacion/collatz.html', context)
+else:
+    return render(request, 'informacion/collatz.html')

@@ -8,24 +8,19 @@
 <body>
     {% include 'informacion/menu.html' %}
     <h1>Jugadores</h1>
-    <!-- recorremos todos los numeros que recibimos -->
-    {% for valor in numeros %}
-
-    
-
     <table border="1">
         <tr>
-            <th>DATO</th>
-            <th>VALOR</th>
+            <th>NOMBRE</th>
+            <th>DEMARCACION</th>
+            <th>CAMISETA</th>
         </tr>
-            <td>Num</td>
-            <td>5</td>
-        </tr>
-        <!-- comentari -->
-        <tr>
-            <td>Num></td>
-            <td>7</td>
-        </tr>
+        {% for valor in jugadores  %}
+            <tr>
+                <td>{{ valor.Nombre }}</td>
+                <td>{{valor.Demarcacion}}</td>
+                <td>{{ valor.Numero }}</td>
+            </tr>
+        {% endfor %}
     </table>
 </body>
 </html>

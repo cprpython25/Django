@@ -1,12 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
-    <h1>Home Proyecto informacion</h1>
-    <img src=""% static {'images/montaña.jpg'%}/>
+    {% include 'informacion/menu.html' %}
+    <hr/>
+    <h1>Home Proyecto información</h1>
+    <img src="{% static 'images/sirena.jpg' %}"/>
 </body>
 </html>

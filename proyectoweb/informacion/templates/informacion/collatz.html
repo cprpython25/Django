@@ -7,18 +7,19 @@
 </head>
 <body>
     {% include 'informacion/menu.html' %}
-    <h1>Página de Saludo</h1>
+    <h1>Conjetura Collatz</h1>
     <form method="post">
         {% csrf_token %}
-        <label>Introduzca su nombre</label>
-        <input type="text" name="cajanombre" required/>
-        <br/>
+        <label>Introduzca número</label>
+        <input type="number" name="cajanumero"/><br/>
         <button>
-            Enviar datos
+            Collatz
         </button>
     </form>
-    <h1 style="color:blue">
-        Bienvenido a mi página, Sr/Sra {{nombre}}
-    </h1>
+    <ul>
+        {% for num in numeroscollatz %}
+            <li> {{num}} </li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
