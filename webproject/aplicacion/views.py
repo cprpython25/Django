@@ -5,7 +5,8 @@ def index(request):
     return render(request, 'aplicacion/index.html')
     #return HttpResponse("Mi primera pagina Django!!!")
 
-def viernes(request):
+def metodoViernes(request):
     return render(request, 'aplicacion/viernes.html')
-def paginapeliculas(request):
-    return render(request, "aplicacion/pelicula.html")
+
+def paginaPelicula(request):
+    return render(request, 'aplicacion/pelicula.html')
